@@ -1,0 +1,581 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+:root{
+    --main-color: #fa7d3b;
+    --dark: #000000;
+    --white: #ffffff;
+    --white-light: #c8c8c8;
+    --shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --cursive-font:'Dancing Script', cursive;
+    
+}
+*{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline:none;
+    border: none;
+    
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    background-color: black;
+    color: #ffffff;
+
+      
+} 
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background: #000000;
+
+    position:sticky;
+    top:0; left:0;
+    right:0; 
+    background:#000000;
+    padding: 1rem 7%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: var(--shadow);
+
+}
+img{
+    left:30px;
+    height: 3.5cm;
+    width: 3.5cm;
+    max-width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    width:90%;
+    margin: 0 auto;
+
+}
+
+header::after{
+    content: '';
+    display:table;
+    clear:both;
+
+}
+.button{
+    display:inline-block;
+    text-decoration: none;
+    padding:10px 30px;
+    background-color:transparent;
+    border-radius: 30px;
+    text-transform:capitalize;
+    font-weight: 500;
+    transition:all 0.5s ease;
+    font-size:16px;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+    color:#fa7d3b;
+    line-height:1.5;
+    user-select: none;
+    border:2px solid #fa7d3b;
+
+}
+.button:hover{
+    color:#000000;
+    background-color: #fa7d3b;
+}
+.logo {
+    float: left;
+    padding: 0 0;
+
+}
+li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 50px;
+    position: relative;
+}
+nav{
+    float: right;
+}
+nav a:hover{
+    color:#fa7d3b;
+
+} 
+h1{
+    font-weight: 700;
+    color:#ffffff;
+}
+h2{
+    font-weight: 600;
+    color:#ffffff;
+}
+h3,h4,h5,h6{
+    font-weight: 500;
+    color: #ffffff;
+}
+nav a::before{
+    content:'';
+    display: block;
+    height: 4px;
+    background-color: #fa7d3b;
+    position: absolute;
+    top: 40px;
+    width:0%;
+    transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100% ;
+}
+/*navigator finish*/
+/*Home*/
+span{
+    color:#fa7d3b;
+    font-family: 'Dancing Script', cursive;
+    font-size:55px;
+    line-height: 75px;
+}
+.section1{
+    position: relative;
+
+}
+.section1::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:#000000;
+    opacity:0.6;
+    z-index:-1;
+
+}
+.section1 .row{
+    padding: 150px 0;
+    align-items: center;
+}
+.bg{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-attachment: fixed;
+    background-image: url('file:///C:/Users/DELL/Pictures/elcielobg.png');
+    background-size:cover;
+    background-position: center;
+    z-index: -2;
+    
+}
+.home{
+    padding: 0 15px;
+    max-width:800px;
+    width:100%;
+    margin:auto;
+    text-align: center;
+}
+.home h1{
+    font-family: 'Dancing Script', cursive;
+    font-size:75px;
+    line-height: 75px;
+    margin:0 0 5px;
+}
+.home p{
+    margin:0 0 30px;
+    font-family: 'Poppins', sans-serif;
+}
+/*about*/
+.section-title{
+    width:100%;
+    padding:0 15 px;
+    text-align:center;
+    margin-bottom: 60px;
+}
+.section-title h2{
+     font-size: 55px;
+     text-transform: capitalize;
+     font-family:'Dancing Script', cursive;
+     font-weight: 400;
+
+}
+.section-title h2::before{
+    content: '';
+    display: block;
+    font-size: 55px;
+    color:#fa7d3b;
+    font-weight: 400;
+    
+}
+.about{
+    background-color: #000000;
+    padding:80px 0;
+
+}
+.about-text{
+    width: 100%;
+    padding:10px 10px;
+    text-align: center;
+}
+.about-text h2{
+    font-size: 45px;
+    font-weight: 300;
+    font-family:'Dancing Script', cursive;
+}   
+/*Dish of the day*/
+.container-dish{
+    left: 4px;
+}
+.container-dish table{
+    border: 3px solid;
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+
+}
+.container-dish h1,h2{
+    text-align: center;
+
+}
+.container-dish img{
+    width:300px;
+   height:250px;
+   margin-right: 60px;
+}
+
+
+/*Our specials*/
+.heading{
+    font-family:'Dancing Script', cursive;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.box{
+   position:relative;
+   width:300px;
+   height:250px;
+   left:130px;
+
+}
+.image{
+    display:block;
+    width:100%;
+    cursor:pointer;
+    object-fit: cover;
+    margin:1.5rem 0;
+    height:90%;
+    top:100%;
+    left:40px;
+    border-radius: 20px;
+}
+
+.content{
+    position:absolute;
+    top:0;
+    left:0px;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    color:#fff;
+    display: flex;
+    font-family:  'Poppins', sans-serif;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    opacity:0; 
+    transition:opacity 0.25s;
+
+
+}
+/*Text from bottom*/
+.content > *{
+    transform:translatey(0);
+}
+.content:hover{
+    opacity:1;
+
+}
+.img-title{
+    font-size: 16px;
+
+    font-family:  'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+.image-content{
+    font-size:small;
+    font-family:  'Poppins', sans-serif;
+    margin-top: 0.25cm;
+    text-align: center;
+}
+
+.speciality .box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+}
+.button1{
+    display:inline-block;
+    text-decoration: none;
+    padding:10px 30px;
+    background-color:transparent;
+    border-radius: 30px;
+    text-transform:capitalize;
+    font-weight: 500;
+    transition:all 0.5s ease;
+    font-size:16px;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+    color:#fa7d3b;
+    line-height:1.5;
+    user-select: none;
+    border:2px solid #fa7d3b;
+
+}
+.b1{
+    text-align: center;
+}
+.button1 a{
+    text-decoration:none;
+
+}
+.button1:hover{
+    color:#000000;
+    background-color: #fa7d3b;
+}
+/*gallery*/
+
+.slide{
+        position:relative;
+        width:400px;
+        height:250px;
+        left:130px;
+        border-radius: 20px;
+        overflow:hidden;
+      
+}
+.slide img{
+        display:block;
+        width:100%;
+        cursor:pointer;
+        object-fit: cover;
+        margin:1.5rem 0;
+        height:90%;
+        top:100%;
+        left:40px;
+        padding:5px;
+        border-radius: 20px;
+
+    
+}
+.slide img:hover{
+    transform:scale(1.2,1.2);
+    transition:all ease-out 6s transform;
+    border-radius: 20px;
+}
+.slide-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-items: center;
+    align-items: center;
+}
+
+/*contact*/
+.contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-info{
+    display:flex;
+    align-items: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:1rem;
+
+}
+.item1{
+    background-color: #fcbe9d;
+    padding:10px 30px;
+    text-align: center;
+    width:250px;
+    vertical-align: middle;
+    border-radius: 40px;
+}
+.icon{
+    width:30px;
+    margin: 0 auto;
+
+}
+.icon-title{
+    font-size:1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    margin-bottom:0.5rem;
+    color:#000000;
+}
+.icon-text{
+    margin-bottom: 2px;
+    font-size:1.4rem;
+    font-family:  'Poppins', sans-serif;
+    color:#000;
+}
+#icontxt{
+    margin-bottom:0px;
+    
+}
+#iconemail{
+    margin-bottom: 4px;
+}
+/*Reservation*/
+#reservations{
+        padding:5rem 0;
+
+
+    }
+.form-title{
+    font-size:1.8rem;
+    color:#000000;
+    font-weight:600;
+
+
+}
+.form{
+    margin-left: 30px;
+    padding:2rem 0;
+
+}
+.form form{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:2rem;
+}
+.form-group label{
+    font-size:1.6rem;
+    font-family:'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 400;
+    
+}
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:90%;
+    border:none;
+    background-color: #fcbe9d;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 600;
+    padding:1.5rem;
+    margin-top:0.5rem;
+    color: #000;
+    border-radius: 40px;
+
+}
+.form-group textarea{
+    resize:vertical;
+}
+.form button[type='submit']{
+    width:max-content;
+    border:#fa7d3b;
+    padding: 1rem 4rem;
+    font-weight:500;
+    letter-spacing:0.1rem ;
+}
+.btn-submit{
+    margin-top: 30px;
+    text-decoration: none;
+    padding:10px 30px;
+    background-color:#fcbe9d;
+    border-radius: 40px;
+    text-transform:capitalize;
+    font-weight: 500;
+    transition:all 0.5s ease;
+    font-size:16px;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+    color:#000;
+    line-height:1.5;
+    user-select: none;
+
+}
+/*Health tips*/
+.health-table{
+    width:98%;
+    border: 3px solid;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-color: #000;
+    border-radius: 40px;
+    text-align: center;
+    font-family:'Poppins', sans-serif ;
+    font-size:16px;
+
+}
+.table-row{
+    background-color: #fcbe9d;
+    border: 3px solid;
+    height:60px;
+    padding: 10px;
+    color: #000;
+    border-radius: 40px;
+}
+.table-column{
+    height:80px;
+    padding:10px;
+    color: #000;
+    background-color: #fcbe9d;
+    border: 3px solid;
+    border-radius: 40px;
+}
+
+
+
+/*feedback*/
+#feedback { 
+    height: 30px; 
+    width: 104px; 
+    position: fixed; 
+    bottom:0%; 
+  }
+  
+  #feedback a { 
+    display: inline-block; 
+    background: #fa7d3b; 
+    vertical-align: middle;
+    text-align: center;
+    height: 30px; 
+    width: 90px; 
+    padding: 0px 8px;
+    color: #000; 
+    font-family:  'Poppins', sans-serif;
+    font-size: 12px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-bottom: solid 1px #333;
+    border-left: solid 1px #333;
+    border-right: solid 1px #333;
+  }
+  
+  #feedback a:hover { 
+    background: #fcbe9d; 
+  }
